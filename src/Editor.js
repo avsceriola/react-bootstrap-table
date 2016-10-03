@@ -104,7 +104,7 @@ const editor = function(editable, attr, format, editorClass, defaultValue, ignor
   }
   // default return for other case of editable
   return (
-    <input {...attr} type='text'
+    <input {...attr} defaultValue={ defaultValue } type='text'
       className={ (editorClass || '') + ' form-control editor edit-text' }/>
   );
 };
