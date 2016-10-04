@@ -2616,7 +2616,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // put other if exist
 	        editable.cols && (attr.cols = editable.cols);
 	        editable.rows && (attr.rows = editable.rows);
-	        var saveBtn = undefined;
+	        // let saveBtn;
 	        var keyUpHandler = attr.onKeyDown;
 	        if (keyUpHandler) {
 	          attr.onKeyDown = function (e) {
@@ -2625,21 +2625,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	              keyUpHandler(e);
 	            }
 	          };
-	          saveBtn = _react2['default'].createElement(
-	            'button',
-	            {
-	              className: 'btn btn-info btn-xs textarea-save-btn',
-	              onClick: keyUpHandler },
-	            'save'
-	          );
+	          // saveBtn = (
+	          //   <button
+	          //     className='btn btn-info btn-xs textarea-save-btn'
+	          //     onClick={ keyUpHandler }>
+	          //     save
+	          //   </button>
+	          // );
 	        }
 	        return {
 	          v: _react2['default'].createElement(
 	            'div',
 	            null,
-	            _react2['default'].createElement('textarea', _extends({}, attr, { defaultValue: defaultValue })),
-	            '// ',
-	            saveBtn
+	            _react2['default'].createElement('textarea', _extends({}, attr, { defaultValue: defaultValue }))
 	          )
 	        };
 	      })();
@@ -2672,6 +2670,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports['default'] = editor;
 	module.exports = exports['default'];
+	/* saveBtn*/
 
 /***/ },
 /* 13 */

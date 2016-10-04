@@ -54,7 +54,7 @@ const editor = function(editable, attr, format, editorClass, defaultValue, ignor
       // put other if exist
       editable.cols && (attr.cols = editable.cols);
       editable.rows && (attr.rows = editable.rows);
-      let saveBtn;
+      // let saveBtn;
       const keyUpHandler = attr.onKeyDown;
       if (keyUpHandler) {
         attr.onKeyDown = function(e) {
@@ -62,18 +62,18 @@ const editor = function(editable, attr, format, editorClass, defaultValue, ignor
             keyUpHandler(e);
           }
         };
-        saveBtn = (
-          <button
-            className='btn btn-info btn-xs textarea-save-btn'
-            onClick={ keyUpHandler }>
-            save
-          </button>
-        );
+        // saveBtn = (
+        //   <button
+        //     className='btn btn-info btn-xs textarea-save-btn'
+        //     onClick={ keyUpHandler }>
+        //     save
+        //   </button>
+        // );
       }
       return (
         <div>
           <textarea { ...attr } defaultValue={ defaultValue }></textarea>
-          // { saveBtn }
+          { /* saveBtn*/ }
         </div>
       );
     } else if (editable.type === 'checkbox') {
