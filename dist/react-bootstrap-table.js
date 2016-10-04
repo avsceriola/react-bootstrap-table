@@ -2638,6 +2638,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            'div',
 	            null,
 	            _react2['default'].createElement('textarea', _extends({}, attr, { defaultValue: defaultValue })),
+	            '// ',
 	            saveBtn
 	          )
 	        };
