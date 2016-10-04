@@ -73,7 +73,7 @@ const editor = function(editable, attr, format, editorClass, defaultValue, ignor
       return (
         <div>
           <textarea { ...attr } defaultValue={ defaultValue }></textarea>
-          { saveBtn }
+          // { saveBtn }
         </div>
       );
     } else if (editable.type === 'checkbox') {
